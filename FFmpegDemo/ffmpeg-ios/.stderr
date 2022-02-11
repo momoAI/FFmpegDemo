@@ -1,0 +1,1246 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   149  100   149    0     0   1631      0 --:--:-- --:--:-- --:--:--  1637
+100 43674  100 43674    0     0   132k      0 --:--:-- --:--:-- --:--:--  132k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 10.7M    0  109k    0     0   155k      0  0:01:10 --:--:--  0:01:10  155k 16 10.7M   16 1875k    0     0  1168k      0  0:00:09  0:00:01  0:00:08 1168k 48 10.7M   48 5315k    0     0  2056k      0  0:00:05  0:00:02  0:00:03 2055k 72 10.7M   72 7955k    0     0  2217k      0  0:00:04  0:00:03  0:00:01 2216k 94 10.7M   94 10.1M    0     0  2258k      0  0:00:04  0:00:04 --:--:-- 2258k100 10.7M  100 10.7M    0     0  2193k      0  0:00:05  0:00:05 --:--:-- 2524k
+src/libavdevice/avdevice.c:88:26: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+            if (!(prev = av_oformat_next(prev)))
+                         ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+src/libavdevice/avdevice.c:92:26: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+            if (!(prev = av_iformat_next(prev)))
+                         ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+2 warnings generated.
+src/libavformat/dump.c:504:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->properties = st->codec->properties;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:505:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->codec      = st->codec->codec;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:506:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->qmin       = st->codec->qmin;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:507:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->qmax       = st->codec->qmax;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:508:31: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->coded_width  = st->codec->coded_width;
+                              ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:509:31: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->coded_height = st->codec->coded_height;
+                              ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:544:23: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        int tbc = st->codec->time_base.den && st->codec->time_base.num;
+                      ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:544:51: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        int tbc = st->codec->time_base.den && st->codec->time_base.num;
+                                                  ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:556:38: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            print_fps(1 / av_q2d(st->codec->time_base), "tbc");
+                                     ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+9 warnings generated.
+src/libavformat/options.c:64:20: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+    while ((ifmt = av_iformat_next(ifmt)))
+                   ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+src/libavformat/options.c:69:24: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+        while ((ofmt = av_oformat_next(ofmt)))
+                       ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+src/libavformat/options.c:73:23: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+        while (ifmt = av_iformat_next(ifmt))
+                      ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+src/libavformat/options.c:77:19: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+    while (ofmt = av_oformat_next(ofmt))
+                  ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+4 warnings generated.
+src/libavformat/protocols.c:100:7: warning: assigning to 'const URLProtocol **' (aka 'const struct URLProtocol **') from 'const URLProtocol *const *' (aka 'const struct URLProtocol *const *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    p = p ? p + 1 : url_protocols;
+      ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+src/libavformat/sdp.c:707:21: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            if (st->codec) {
+                    ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/sdp.c:711:25: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+                if (st->codec->flags & AV_CODEC_FLAG_QSCALE)
+                        ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/sdp.c:713:46: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+                else if (!av_opt_get_int(st->codec, "vad", AV_OPT_FLAG_ENCODING_PARAM, &vad_option) && vad_option)
+                                             ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+3 warnings generated.
+src/libavformat/utils.c:5776:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    const AVCodecContext *dec_ctx = ist->codec;
+                                         ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/utils.c:5777:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    AVCodecContext       *enc_ctx = ost->codec;
+                                         ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+2 warnings generated.
+src/libavfilter/avfiltergraph.c:135:25: warning: 'resample_lavr_opts' is deprecated [-Wdeprecated-declarations]
+    av_freep(&(*graph)->resample_lavr_opts);
+                        ^
+src/libavfilter/avfilter.h:847:32: note: 'resample_lavr_opts' has been explicitly marked deprecated here
+    attribute_deprecated char *resample_lavr_opts;   ///< libavresample options to use for the auto-inserted resample filters
+                               ^
+1 warning generated.
+src/libavfilter/lavfutils.c:91:11: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+    ret = avcodec_decode_video2(codec_ctx, frame, &frame_decoded, &pkt);
+          ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+1 warning generated.
+src/libavfilter/src_movie.c:175:20: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    st->codec_ctx->refcounted_frames = 1;
+                   ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavfilter/src_movie.c:530:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(st->codec_ctx, frame, &got_frame, pkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+src/libavfilter/src_movie.c:533:15: warning: 'avcodec_decode_audio4' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_audio4(st->codec_ctx, frame, &got_frame, pkt);
+              ^
+src/libavcodec/avcodec.h:3024:5: note: 'avcodec_decode_audio4' has been explicitly marked deprecated here
+int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+    ^
+3 warnings generated.
+src/libavfilter/vf_codecview.c:223:28: warning: 'av_frame_get_qp_table' is deprecated [-Wdeprecated-declarations]
+        int8_t *qp_table = av_frame_get_qp_table(frame, &qstride, &qp_type);
+                           ^
+src/libavutil/frame.h:725:9: note: 'av_frame_get_qp_table' has been explicitly marked deprecated here
+int8_t *av_frame_get_qp_table(AVFrame *f, int *stride, int *type);
+        ^
+1 warning generated.
+src/libavfilter/vf_qp.c:113:19: warning: 'av_frame_get_qp_table' is deprecated [-Wdeprecated-declarations]
+    in_qp_table = av_frame_get_qp_table(in, &stride, &type);
+                  ^
+src/libavutil/frame.h:725:9: note: 'av_frame_get_qp_table' has been explicitly marked deprecated here
+int8_t *av_frame_get_qp_table(AVFrame *f, int *stride, int *type);
+        ^
+src/libavfilter/vf_qp.c:114:5: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+    av_frame_set_qp_table(out, out_qp_table_buf, s->qstride, type);
+    ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+2 warnings generated.
+src/libavcodec/audiotoolboxdec.c:35:5: warning: '__MAC_OS_X_VERSION_MIN_REQUIRED' is not defined, evaluates to 0 [-Wundef]
+#if __MAC_OS_X_VERSION_MIN_REQUIRED < 101100
+    ^
+1 warning generated.
+src/libavcodec/avrndec.c:59:25: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+        a->mjpeg_avctx->refcounted_frames = 1;
+                        ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavcodec/avrndec.c:110:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(a->mjpeg_avctx, data, got_frame, avpkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+2 warnings generated.
+src/libavcodec/decode.c:770:25: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+            if (!avctx->refcounted_frames) {
+                        ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+1 warning generated.
+src/libavcodec/encode.c:370:15: warning: 'avcodec_encode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_encode_video2(avctx, avctx->internal->buffer_pkt,
+              ^
+src/libavcodec/encode.c:259:25: note: 'avcodec_encode_video2' has been explicitly marked deprecated here
+int attribute_align_arg avcodec_encode_video2(AVCodecContext *avctx,
+                        ^
+src/libavcodec/encode.c:373:15: warning: 'avcodec_encode_audio2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_encode_audio2(avctx, avctx->internal->buffer_pkt,
+              ^
+src/libavcodec/encode.c:113:25: note: 'avcodec_encode_audio2' has been explicitly marked deprecated here
+int attribute_align_arg avcodec_encode_audio2(AVCodecContext *avctx,
+                        ^
+2 warnings generated.
+src/libavcodec/hevc_cabac.c:37:21: warning: variable 'num_bins_in_se' is not needed and will not be emitted [-Wunneeded-internal-declaration]
+static const int8_t num_bins_in_se[] = {
+                    ^
+1 warning generated.
+src/libavcodec/mjpegdec.c:2524:21: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+                    av_frame_set_qp_table(data, qp_table_buf, 0, FF_QSCALE_TYPE_MPEG1);
+                    ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+1 warning generated.
+src/libavcodec/mpegvideo.c:1453:12: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+    return av_frame_set_qp_table(f, ref, s->mb_stride, qp_type);
+           ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+1 warning generated.
+src/libavcodec/notchlc.c:285:31: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+            int u[16][16] = { 0 }, v[16][16] = { 0 };
+                              ^
+                              {}
+src/libavcodec/notchlc.c:285:50: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+            int u[16][16] = { 0 }, v[16][16] = { 0 };
+                                                 ^
+                                                 {}
+2 warnings generated.
+src/libavcodec/smvjpegdec.c:131:15: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    s->avctx->refcounted_frames = 1;
+              ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavcodec/smvjpegdec.c:162:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(s->avctx, mjpeg_data, &s->mjpeg_data_size, avpkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+2 warnings generated.
+src/libavcodec/utils.c:1098:17: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    if (!avctx->refcounted_frames)
+                ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+1 warning generated.
+src/libavutil/video_enc_params.c:36:19: warning: comparison of constant 922337203685477580 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+    if (nb_blocks > SIZE_MAX / sizeof(AVVideoBlockParams) ||
+        ~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+src/libavdevice/avdevice.c:88:26: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+            if (!(prev = av_oformat_next(prev)))
+                         ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+src/libavdevice/avdevice.c:92:26: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+            if (!(prev = av_iformat_next(prev)))
+                         ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+2 warnings generated.
+src/libavformat/dump.c:504:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->properties = st->codec->properties;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:505:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->codec      = st->codec->codec;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:506:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->qmin       = st->codec->qmin;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:507:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->qmax       = st->codec->qmax;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:508:31: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->coded_width  = st->codec->coded_width;
+                              ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:509:31: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->coded_height = st->codec->coded_height;
+                              ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:544:23: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        int tbc = st->codec->time_base.den && st->codec->time_base.num;
+                      ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:544:51: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        int tbc = st->codec->time_base.den && st->codec->time_base.num;
+                                                  ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:556:38: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            print_fps(1 / av_q2d(st->codec->time_base), "tbc");
+                                     ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+9 warnings generated.
+src/libavformat/options.c:64:20: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+    while ((ifmt = av_iformat_next(ifmt)))
+                   ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+src/libavformat/options.c:69:24: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+        while ((ofmt = av_oformat_next(ofmt)))
+                       ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+src/libavformat/options.c:73:23: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+        while (ifmt = av_iformat_next(ifmt))
+                      ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+src/libavformat/options.c:77:19: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+    while (ofmt = av_oformat_next(ofmt))
+                  ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+4 warnings generated.
+src/libavformat/protocols.c:100:7: warning: assigning to 'const URLProtocol **' (aka 'const struct URLProtocol **') from 'const URLProtocol *const *' (aka 'const struct URLProtocol *const *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    p = p ? p + 1 : url_protocols;
+      ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+src/libavformat/sdp.c:707:21: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            if (st->codec) {
+                    ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/sdp.c:711:25: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+                if (st->codec->flags & AV_CODEC_FLAG_QSCALE)
+                        ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/sdp.c:713:46: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+                else if (!av_opt_get_int(st->codec, "vad", AV_OPT_FLAG_ENCODING_PARAM, &vad_option) && vad_option)
+                                             ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+3 warnings generated.
+src/libavformat/utils.c:5776:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    const AVCodecContext *dec_ctx = ist->codec;
+                                         ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/utils.c:5777:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    AVCodecContext       *enc_ctx = ost->codec;
+                                         ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/wtvdec.c:515:50: warning: format specifies type 'unsigned short' but the argument has type 'unsigned int' [-Wformat]
+        snprintf(buf, buf_size, PRI_PRETTY_GUID, ARG_PRETTY_GUID(guid));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src/libavformat/wtvdec.c:43:16: note: expanded from macro 'ARG_PRETTY_GUID'
+    AV_RL32(g),AV_RL16(g+4),AV_RL16(g+6),g[8],g[9],g[10],g[11],g[12],g[13],g[14],g[15]
+               ^
+src/libavutil/intreadwrite.h:152:27: note: expanded from macro 'AV_RL16'
+#       define AV_RL16(p) AV_RN16(p)
+                          ^
+src/libavutil/arm/intreadwrite.h:28:17: note: expanded from macro 'AV_RN16'
+#define AV_RN16 AV_RN16
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/secure/_stdio.h:57:62: note: expanded from macro 'snprintf'
+  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                             ^~~~~~~~~~~
+src/libavformat/wtvdec.c:515:50: warning: format specifies type 'unsigned short' but the argument has type 'unsigned int' [-Wformat]
+        snprintf(buf, buf_size, PRI_PRETTY_GUID, ARG_PRETTY_GUID(guid));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src/libavformat/wtvdec.c:43:29: note: expanded from macro 'ARG_PRETTY_GUID'
+    AV_RL32(g),AV_RL16(g+4),AV_RL16(g+6),g[8],g[9],g[10],g[11],g[12],g[13],g[14],g[15]
+                            ^
+src/libavutil/intreadwrite.h:152:27: note: expanded from macro 'AV_RL16'
+#       define AV_RL16(p) AV_RN16(p)
+                          ^
+src/libavutil/arm/intreadwrite.h:28:17: note: expanded from macro 'AV_RN16'
+#define AV_RN16 AV_RN16
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/secure/_stdio.h:57:62: note: expanded from macro 'snprintf'
+  __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                             ^~~~~~~~~~~
+2 warnings generated.
+2 warnings generated.
+src/libavfilter/avfiltergraph.c:135:25: warning: 'resample_lavr_opts' is deprecated [-Wdeprecated-declarations]
+    av_freep(&(*graph)->resample_lavr_opts);
+                        ^
+src/libavfilter/avfilter.h:847:32: note: 'resample_lavr_opts' has been explicitly marked deprecated here
+    attribute_deprecated char *resample_lavr_opts;   ///< libavresample options to use for the auto-inserted resample filters
+                               ^
+1 warning generated.
+src/libavfilter/lavfutils.c:91:11: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+    ret = avcodec_decode_video2(codec_ctx, frame, &frame_decoded, &pkt);
+          ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+1 warning generated.
+src/libavfilter/src_movie.c:175:20: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    st->codec_ctx->refcounted_frames = 1;
+                   ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavfilter/src_movie.c:530:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(st->codec_ctx, frame, &got_frame, pkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+src/libavfilter/src_movie.c:533:15: warning: 'avcodec_decode_audio4' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_audio4(st->codec_ctx, frame, &got_frame, pkt);
+              ^
+src/libavcodec/avcodec.h:3024:5: note: 'avcodec_decode_audio4' has been explicitly marked deprecated here
+int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+    ^
+3 warnings generated.
+src/libavfilter/vf_codecview.c:223:28: warning: 'av_frame_get_qp_table' is deprecated [-Wdeprecated-declarations]
+        int8_t *qp_table = av_frame_get_qp_table(frame, &qstride, &qp_type);
+                           ^
+src/libavutil/frame.h:725:9: note: 'av_frame_get_qp_table' has been explicitly marked deprecated here
+int8_t *av_frame_get_qp_table(AVFrame *f, int *stride, int *type);
+        ^
+1 warning generated.
+src/libavfilter/vf_qp.c:113:19: warning: 'av_frame_get_qp_table' is deprecated [-Wdeprecated-declarations]
+    in_qp_table = av_frame_get_qp_table(in, &stride, &type);
+                  ^
+src/libavutil/frame.h:725:9: note: 'av_frame_get_qp_table' has been explicitly marked deprecated here
+int8_t *av_frame_get_qp_table(AVFrame *f, int *stride, int *type);
+        ^
+src/libavfilter/vf_qp.c:114:5: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+    av_frame_set_qp_table(out, out_qp_table_buf, s->qstride, type);
+    ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+2 warnings generated.
+src/libavcodec/audiotoolboxdec.c:35:5: warning: '__MAC_OS_X_VERSION_MIN_REQUIRED' is not defined, evaluates to 0 [-Wundef]
+#if __MAC_OS_X_VERSION_MIN_REQUIRED < 101100
+    ^
+src/libavcodec/audiotoolboxdec.c:343:34: warning: incompatible pointer types passing 'UInt32 *' (aka 'unsigned long *') to parameter of type 'int *' [-Wincompatible-pointer-types]
+                                 &in_format.mChannelsPerFrame, &avctx->frame_size,
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/libavcodec/mpegaudiodecheader.h:58:31: note: passing argument to parameter 'channels' here
+                         int *channels, int *frame_size, int *bitrate, enum AVCodecID *codec_id);
+                              ^
+src/libavcodec/audiotoolboxdec.c:534:43: warning: incompatible pointer types passing 'int *' to parameter of type 'UInt32 * _Nonnull' (aka 'unsigned long *') [-Wincompatible-pointer-types]
+                                          &frame->nb_samples, &out_buffers, NULL);
+                                          ^~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h:833:73: note: passing argument to parameter 'ioOutputDataPacketSize' here
+                                    UInt32 *                            ioOutputDataPacketSize,
+                                                                        ^
+src/libavcodec/audiotoolboxdec.c:550:61: warning: values of type 'OSStatus' should not be used as format arguments; add an explicit cast to 'int' instead [-Wformat]
+        av_log(avctx, AV_LOG_WARNING, "Decode error: %i\n", ret);
+                                                     ~~     ^~~
+                                                            (int)
+src/libavcodec/audiotoolboxenc.c:367:68: warning: values of type 'UInt32' should not be used as format arguments; add an explicit cast to 'unsigned int' instead [-Wformat]
+                       "Bitrate %u not allowed; changing to %u\n", rate, new_rate);
+                                ~~                                 ^~~~
+                                                                   (unsigned int)
+src/libavcodec/audiotoolboxenc.c:367:74: warning: values of type 'UInt32' should not be used as format arguments; add an explicit cast to 'unsigned int' instead [-Wformat]
+                       "Bitrate %u not allowed; changing to %u\n", rate, new_rate);
+                                                            ~~           ^~~~~~~~
+                                                                         (unsigned int)
+src/libavcodec/audiotoolboxenc.c:381:40: warning: incompatible pointer types passing 'int *' to parameter of type 'UInt32 * _Nullable' (aka 'unsigned long *') [-Wincompatible-pointer-types]
+                                       &avctx->extradata_size, NULL) &&
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h:593:61: note: passing argument to parameter 'outSize' here
+                                UInt32 * __nullable         outSize,
+                                                            ^
+src/libavcodec/audiotoolboxenc.c:398:44: warning: incompatible pointer types passing 'int *' to parameter of type 'UInt32 * _Nonnull' (aka 'unsigned long *') [-Wincompatible-pointer-types]
+                                           &extradata_size, extradata);
+                                           ^~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h:615:57: note: passing argument to parameter 'ioPropertyDataSize' here
+                            UInt32 *                    ioPropertyDataSize,
+                                                        ^
+src/libavcodec/audiotoolboxenc.c:548:43: warning: incompatible pointer types passing 'int *' to parameter of type 'UInt32 * _Nonnull' (aka 'unsigned long *') [-Wincompatible-pointer-types]
+                                          got_packet_ptr, &out_buffers,
+                                          ^~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h:833:73: note: passing argument to parameter 'ioOutputDataPacketSize' here
+                                    UInt32 *                            ioOutputDataPacketSize,
+                                                                        ^
+src/libavcodec/audiotoolboxenc.c:561:61: warning: values of type 'OSStatus' should not be used as format arguments; add an explicit cast to 'int' instead [-Wformat]
+        av_log(avctx, AV_LOG_WARNING, "Encode error: %i\n", ret);
+                                                     ~~     ^~~
+                                                            (int)
+4 warnings generated.
+6 warnings generated.
+src/libavcodec/avrndec.c:59:25: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+        a->mjpeg_avctx->refcounted_frames = 1;
+                        ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavcodec/avrndec.c:110:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(a->mjpeg_avctx, data, got_frame, avpkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+2 warnings generated.
+src/libavcodec/decode.c:770:25: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+            if (!avctx->refcounted_frames) {
+                        ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+1 warning generated.
+src/libavcodec/encode.c:370:15: warning: 'avcodec_encode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_encode_video2(avctx, avctx->internal->buffer_pkt,
+              ^
+src/libavcodec/encode.c:259:25: note: 'avcodec_encode_video2' has been explicitly marked deprecated here
+int attribute_align_arg avcodec_encode_video2(AVCodecContext *avctx,
+                        ^
+src/libavcodec/encode.c:373:15: warning: 'avcodec_encode_audio2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_encode_audio2(avctx, avctx->internal->buffer_pkt,
+              ^
+src/libavcodec/encode.c:113:25: note: 'avcodec_encode_audio2' has been explicitly marked deprecated here
+int attribute_align_arg avcodec_encode_audio2(AVCodecContext *avctx,
+                        ^
+2 warnings generated.
+src/libavcodec/hevc_cabac.c:37:21: warning: variable 'num_bins_in_se' is not needed and will not be emitted [-Wunneeded-internal-declaration]
+static const int8_t num_bins_in_se[] = {
+                    ^
+1 warning generated.
+src/libavcodec/mjpegdec.c:2524:21: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+                    av_frame_set_qp_table(data, qp_table_buf, 0, FF_QSCALE_TYPE_MPEG1);
+                    ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+1 warning generated.
+src/libavcodec/mpegvideo.c:1453:12: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+    return av_frame_set_qp_table(f, ref, s->mb_stride, qp_type);
+           ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+1 warning generated.
+src/libavcodec/notchlc.c:285:31: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+            int u[16][16] = { 0 }, v[16][16] = { 0 };
+                              ^
+                              {}
+src/libavcodec/notchlc.c:285:50: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+            int u[16][16] = { 0 }, v[16][16] = { 0 };
+                                                 ^
+                                                 {}
+2 warnings generated.
+src/libavcodec/smvjpegdec.c:131:15: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    s->avctx->refcounted_frames = 1;
+              ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavcodec/smvjpegdec.c:162:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(s->avctx, mjpeg_data, &s->mjpeg_data_size, avpkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+2 warnings generated.
+src/libavcodec/utils.c:1098:17: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    if (!avctx->refcounted_frames)
+                ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+1 warning generated.
+src/libavdevice/avdevice.c:88:26: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+            if (!(prev = av_oformat_next(prev)))
+                         ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+src/libavdevice/avdevice.c:92:26: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+            if (!(prev = av_iformat_next(prev)))
+                         ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+2 warnings generated.
+src/libavformat/dump.c:504:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->properties = st->codec->properties;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:505:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->codec      = st->codec->codec;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:506:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->qmin       = st->codec->qmin;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:507:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->qmax       = st->codec->qmax;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:508:31: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->coded_width  = st->codec->coded_width;
+                              ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:509:31: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->coded_height = st->codec->coded_height;
+                              ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:544:23: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        int tbc = st->codec->time_base.den && st->codec->time_base.num;
+                      ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:544:51: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        int tbc = st->codec->time_base.den && st->codec->time_base.num;
+                                                  ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:556:38: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            print_fps(1 / av_q2d(st->codec->time_base), "tbc");
+                                     ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+9 warnings generated.
+src/libavformat/options.c:64:20: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+    while ((ifmt = av_iformat_next(ifmt)))
+                   ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+src/libavformat/options.c:69:24: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+        while ((ofmt = av_oformat_next(ofmt)))
+                       ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+src/libavformat/options.c:73:23: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+        while (ifmt = av_iformat_next(ifmt))
+                      ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+src/libavformat/options.c:77:19: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+    while (ofmt = av_oformat_next(ofmt))
+                  ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+4 warnings generated.
+src/libavformat/protocols.c:100:7: warning: assigning to 'const URLProtocol **' (aka 'const struct URLProtocol **') from 'const URLProtocol *const *' (aka 'const struct URLProtocol *const *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    p = p ? p + 1 : url_protocols;
+      ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+src/libavformat/sdp.c:707:21: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            if (st->codec) {
+                    ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/sdp.c:711:25: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+                if (st->codec->flags & AV_CODEC_FLAG_QSCALE)
+                        ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/sdp.c:713:46: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+                else if (!av_opt_get_int(st->codec, "vad", AV_OPT_FLAG_ENCODING_PARAM, &vad_option) && vad_option)
+                                             ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+3 warnings generated.
+src/libavformat/utils.c:5776:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    const AVCodecContext *dec_ctx = ist->codec;
+                                         ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/utils.c:5777:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    AVCodecContext       *enc_ctx = ost->codec;
+                                         ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+2 warnings generated.
+src/libavfilter/avfiltergraph.c:135:25: warning: 'resample_lavr_opts' is deprecated [-Wdeprecated-declarations]
+    av_freep(&(*graph)->resample_lavr_opts);
+                        ^
+src/libavfilter/avfilter.h:847:32: note: 'resample_lavr_opts' has been explicitly marked deprecated here
+    attribute_deprecated char *resample_lavr_opts;   ///< libavresample options to use for the auto-inserted resample filters
+                               ^
+1 warning generated.
+src/libavfilter/lavfutils.c:91:11: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+    ret = avcodec_decode_video2(codec_ctx, frame, &frame_decoded, &pkt);
+          ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+1 warning generated.
+src/libavfilter/src_movie.c:175:20: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    st->codec_ctx->refcounted_frames = 1;
+                   ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavfilter/src_movie.c:530:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(st->codec_ctx, frame, &got_frame, pkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+src/libavfilter/src_movie.c:533:15: warning: 'avcodec_decode_audio4' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_audio4(st->codec_ctx, frame, &got_frame, pkt);
+              ^
+src/libavcodec/avcodec.h:3024:5: note: 'avcodec_decode_audio4' has been explicitly marked deprecated here
+int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+    ^
+3 warnings generated.
+src/libavfilter/vf_codecview.c:223:28: warning: 'av_frame_get_qp_table' is deprecated [-Wdeprecated-declarations]
+        int8_t *qp_table = av_frame_get_qp_table(frame, &qstride, &qp_type);
+                           ^
+src/libavutil/frame.h:725:9: note: 'av_frame_get_qp_table' has been explicitly marked deprecated here
+int8_t *av_frame_get_qp_table(AVFrame *f, int *stride, int *type);
+        ^
+1 warning generated.
+src/libavfilter/vf_qp.c:113:19: warning: 'av_frame_get_qp_table' is deprecated [-Wdeprecated-declarations]
+    in_qp_table = av_frame_get_qp_table(in, &stride, &type);
+                  ^
+src/libavutil/frame.h:725:9: note: 'av_frame_get_qp_table' has been explicitly marked deprecated here
+int8_t *av_frame_get_qp_table(AVFrame *f, int *stride, int *type);
+        ^
+src/libavfilter/vf_qp.c:114:5: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+    av_frame_set_qp_table(out, out_qp_table_buf, s->qstride, type);
+    ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+2 warnings generated.
+src/libavcodec/audiotoolboxdec.c:35:5: warning: '__MAC_OS_X_VERSION_MIN_REQUIRED' is not defined, evaluates to 0 [-Wundef]
+#if __MAC_OS_X_VERSION_MIN_REQUIRED < 101100
+    ^
+1 warning generated.
+src/libavcodec/avrndec.c:59:25: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+        a->mjpeg_avctx->refcounted_frames = 1;
+                        ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavcodec/avrndec.c:110:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(a->mjpeg_avctx, data, got_frame, avpkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+2 warnings generated.
+src/libavcodec/decode.c:770:25: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+            if (!avctx->refcounted_frames) {
+                        ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+1 warning generated.
+src/libavcodec/encode.c:370:15: warning: 'avcodec_encode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_encode_video2(avctx, avctx->internal->buffer_pkt,
+              ^
+src/libavcodec/encode.c:259:25: note: 'avcodec_encode_video2' has been explicitly marked deprecated here
+int attribute_align_arg avcodec_encode_video2(AVCodecContext *avctx,
+                        ^
+src/libavcodec/encode.c:373:15: warning: 'avcodec_encode_audio2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_encode_audio2(avctx, avctx->internal->buffer_pkt,
+              ^
+src/libavcodec/encode.c:113:25: note: 'avcodec_encode_audio2' has been explicitly marked deprecated here
+int attribute_align_arg avcodec_encode_audio2(AVCodecContext *avctx,
+                        ^
+2 warnings generated.
+src/libavcodec/hevc_cabac.c:37:21: warning: variable 'num_bins_in_se' is not needed and will not be emitted [-Wunneeded-internal-declaration]
+static const int8_t num_bins_in_se[] = {
+                    ^
+1 warning generated.
+src/libavcodec/mjpegdec.c:2524:21: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+                    av_frame_set_qp_table(data, qp_table_buf, 0, FF_QSCALE_TYPE_MPEG1);
+                    ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+1 warning generated.
+src/libavcodec/mpegvideo.c:1453:12: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+    return av_frame_set_qp_table(f, ref, s->mb_stride, qp_type);
+           ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+1 warning generated.
+src/libavcodec/notchlc.c:285:31: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+            int u[16][16] = { 0 }, v[16][16] = { 0 };
+                              ^
+                              {}
+src/libavcodec/notchlc.c:285:50: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+            int u[16][16] = { 0 }, v[16][16] = { 0 };
+                                                 ^
+                                                 {}
+2 warnings generated.
+src/libavcodec/smvjpegdec.c:131:15: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    s->avctx->refcounted_frames = 1;
+              ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavcodec/smvjpegdec.c:162:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(s->avctx, mjpeg_data, &s->mjpeg_data_size, avpkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+2 warnings generated.
+src/libavcodec/utils.c:1098:17: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    if (!avctx->refcounted_frames)
+                ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+1 warning generated.
+/Users/travis/build/kewlbear/FFmpeg-iOS-build-script/ffmpeg-4.3.1/libavcodec/x86/h264_idct.asm:1152: warning: redefining multi-line macro `STORE_DIFFx2'
+src/libavcodec/x86/h264_idct.asm:1152: warning: redefining multi-line macro `STORE_DIFFx2'
+src/libavutil/video_enc_params.c:36:19: warning: comparison of constant 922337203685477580 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+    if (nb_blocks > SIZE_MAX / sizeof(AVVideoBlockParams) ||
+        ~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+src/libavdevice/avdevice.c:88:26: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+            if (!(prev = av_oformat_next(prev)))
+                         ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+src/libavdevice/avdevice.c:92:26: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+            if (!(prev = av_iformat_next(prev)))
+                         ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+2 warnings generated.
+src/libavformat/dump.c:504:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->properties = st->codec->properties;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:505:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->codec      = st->codec->codec;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:506:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->qmin       = st->codec->qmin;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:507:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->qmax       = st->codec->qmax;
+                            ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:508:31: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->coded_width  = st->codec->coded_width;
+                              ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:509:31: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    avctx->coded_height = st->codec->coded_height;
+                              ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:544:23: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        int tbc = st->codec->time_base.den && st->codec->time_base.num;
+                      ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:544:51: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+        int tbc = st->codec->time_base.den && st->codec->time_base.num;
+                                                  ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/dump.c:556:38: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            print_fps(1 / av_q2d(st->codec->time_base), "tbc");
+                                     ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+9 warnings generated.
+src/libavformat/options.c:64:20: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+    while ((ifmt = av_iformat_next(ifmt)))
+                   ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+src/libavformat/options.c:69:24: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+        while ((ofmt = av_oformat_next(ofmt)))
+                       ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+src/libavformat/options.c:73:23: warning: 'av_iformat_next' is deprecated [-Wdeprecated-declarations]
+        while (ifmt = av_iformat_next(ifmt))
+                      ^
+src/libavformat/avformat.h:2087:17: note: 'av_iformat_next' has been explicitly marked deprecated here
+AVInputFormat  *av_iformat_next(const AVInputFormat  *f);
+                ^
+src/libavformat/options.c:77:19: warning: 'av_oformat_next' is deprecated [-Wdeprecated-declarations]
+    while (ofmt = av_oformat_next(ofmt))
+                  ^
+src/libavformat/avformat.h:2095:17: note: 'av_oformat_next' has been explicitly marked deprecated here
+AVOutputFormat *av_oformat_next(const AVOutputFormat *f);
+                ^
+4 warnings generated.
+src/libavformat/protocols.c:100:7: warning: assigning to 'const URLProtocol **' (aka 'const struct URLProtocol **') from 'const URLProtocol *const *' (aka 'const struct URLProtocol *const *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    p = p ? p + 1 : url_protocols;
+      ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+src/libavformat/sdp.c:707:21: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+            if (st->codec) {
+                    ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/sdp.c:711:25: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+                if (st->codec->flags & AV_CODEC_FLAG_QSCALE)
+                        ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/sdp.c:713:46: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+                else if (!av_opt_get_int(st->codec, "vad", AV_OPT_FLAG_ENCODING_PARAM, &vad_option) && vad_option)
+                                             ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+3 warnings generated.
+src/libavformat/utils.c:5776:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    const AVCodecContext *dec_ctx = ist->codec;
+                                         ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+src/libavformat/utils.c:5777:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+    AVCodecContext       *enc_ctx = ost->codec;
+                                         ^
+src/libavformat/avformat.h:880:21: note: 'codec' has been explicitly marked deprecated here
+    AVCodecContext *codec;
+                    ^
+2 warnings generated.
+src/libavfilter/avfiltergraph.c:135:25: warning: 'resample_lavr_opts' is deprecated [-Wdeprecated-declarations]
+    av_freep(&(*graph)->resample_lavr_opts);
+                        ^
+src/libavfilter/avfilter.h:847:32: note: 'resample_lavr_opts' has been explicitly marked deprecated here
+    attribute_deprecated char *resample_lavr_opts;   ///< libavresample options to use for the auto-inserted resample filters
+                               ^
+1 warning generated.
+src/libavfilter/lavfutils.c:91:11: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+    ret = avcodec_decode_video2(codec_ctx, frame, &frame_decoded, &pkt);
+          ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+1 warning generated.
+src/libavfilter/src_movie.c:175:20: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    st->codec_ctx->refcounted_frames = 1;
+                   ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavfilter/src_movie.c:530:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(st->codec_ctx, frame, &got_frame, pkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+src/libavfilter/src_movie.c:533:15: warning: 'avcodec_decode_audio4' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_audio4(st->codec_ctx, frame, &got_frame, pkt);
+              ^
+src/libavcodec/avcodec.h:3024:5: note: 'avcodec_decode_audio4' has been explicitly marked deprecated here
+int avcodec_decode_audio4(AVCodecContext *avctx, AVFrame *frame,
+    ^
+3 warnings generated.
+src/libavfilter/vf_codecview.c:223:28: warning: 'av_frame_get_qp_table' is deprecated [-Wdeprecated-declarations]
+        int8_t *qp_table = av_frame_get_qp_table(frame, &qstride, &qp_type);
+                           ^
+src/libavutil/frame.h:725:9: note: 'av_frame_get_qp_table' has been explicitly marked deprecated here
+int8_t *av_frame_get_qp_table(AVFrame *f, int *stride, int *type);
+        ^
+1 warning generated.
+src/libavfilter/vf_qp.c:113:19: warning: 'av_frame_get_qp_table' is deprecated [-Wdeprecated-declarations]
+    in_qp_table = av_frame_get_qp_table(in, &stride, &type);
+                  ^
+src/libavutil/frame.h:725:9: note: 'av_frame_get_qp_table' has been explicitly marked deprecated here
+int8_t *av_frame_get_qp_table(AVFrame *f, int *stride, int *type);
+        ^
+src/libavfilter/vf_qp.c:114:5: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+    av_frame_set_qp_table(out, out_qp_table_buf, s->qstride, type);
+    ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip: input object file stripped: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/scratch/i386/libavfilter/x86/colorspacedsp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip: input object file stripped: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/scratch/i386/libavfilter/x86/vf_atadenoise.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip: input object file stripped: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/scratch/i386/libavfilter/x86/vf_convolution.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip: input object file stripped: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/scratch/i386/libavfilter/x86/vf_gblur.o
+src/libavcodec/audiotoolboxdec.c:35:5: warning: '__MAC_OS_X_VERSION_MIN_REQUIRED' is not defined, evaluates to 0 [-Wundef]
+#if __MAC_OS_X_VERSION_MIN_REQUIRED < 101100
+    ^
+src/libavcodec/audiotoolboxdec.c:343:34: warning: incompatible pointer types passing 'UInt32 *' (aka 'unsigned long *') to parameter of type 'int *' [-Wincompatible-pointer-types]
+                                 &in_format.mChannelsPerFrame, &avctx->frame_size,
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/libavcodec/mpegaudiodecheader.h:58:31: note: passing argument to parameter 'channels' here
+                         int *channels, int *frame_size, int *bitrate, enum AVCodecID *codec_id);
+                              ^
+src/libavcodec/audiotoolboxdec.c:534:43: warning: incompatible pointer types passing 'int *' to parameter of type 'UInt32 * _Nonnull' (aka 'unsigned long *') [-Wincompatible-pointer-types]
+                                          &frame->nb_samples, &out_buffers, NULL);
+                                          ^~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h:833:73: note: passing argument to parameter 'ioOutputDataPacketSize' here
+                                    UInt32 *                            ioOutputDataPacketSize,
+                                                                        ^
+src/libavcodec/audiotoolboxdec.c:550:61: warning: values of type 'OSStatus' should not be used as format arguments; add an explicit cast to 'int' instead [-Wformat]
+        av_log(avctx, AV_LOG_WARNING, "Decode error: %i\n", ret);
+                                                     ~~     ^~~
+                                                            (int)
+4 warnings generated.
+src/libavcodec/audiotoolboxenc.c:367:68: warning: values of type 'UInt32' should not be used as format arguments; add an explicit cast to 'unsigned int' instead [-Wformat]
+                       "Bitrate %u not allowed; changing to %u\n", rate, new_rate);
+                                ~~                                 ^~~~
+                                                                   (unsigned int)
+src/libavcodec/audiotoolboxenc.c:367:74: warning: values of type 'UInt32' should not be used as format arguments; add an explicit cast to 'unsigned int' instead [-Wformat]
+                       "Bitrate %u not allowed; changing to %u\n", rate, new_rate);
+                                                            ~~           ^~~~~~~~
+                                                                         (unsigned int)
+src/libavcodec/audiotoolboxenc.c:381:40: warning: incompatible pointer types passing 'int *' to parameter of type 'UInt32 * _Nullable' (aka 'unsigned long *') [-Wincompatible-pointer-types]
+                                       &avctx->extradata_size, NULL) &&
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h:593:61: note: passing argument to parameter 'outSize' here
+                                UInt32 * __nullable         outSize,
+                                                            ^
+src/libavcodec/audiotoolboxenc.c:398:44: warning: incompatible pointer types passing 'int *' to parameter of type 'UInt32 * _Nonnull' (aka 'unsigned long *') [-Wincompatible-pointer-types]
+                                           &extradata_size, extradata);
+                                           ^~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h:615:57: note: passing argument to parameter 'ioPropertyDataSize' here
+                            UInt32 *                    ioPropertyDataSize,
+                                                        ^
+src/libavcodec/audiotoolboxenc.c:548:43: warning: incompatible pointer types passing 'int *' to parameter of type 'UInt32 * _Nonnull' (aka 'unsigned long *') [-Wincompatible-pointer-types]
+                                          got_packet_ptr, &out_buffers,
+                                          ^~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h:833:73: note: passing argument to parameter 'ioOutputDataPacketSize' here
+                                    UInt32 *                            ioOutputDataPacketSize,
+                                                                        ^
+src/libavcodec/audiotoolboxenc.c:561:61: warning: values of type 'OSStatus' should not be used as format arguments; add an explicit cast to 'int' instead [-Wformat]
+        av_log(avctx, AV_LOG_WARNING, "Encode error: %i\n", ret);
+                                                     ~~     ^~~
+                                                            (int)
+6 warnings generated.
+src/libavcodec/avrndec.c:59:25: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+        a->mjpeg_avctx->refcounted_frames = 1;
+                        ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavcodec/avrndec.c:110:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(a->mjpeg_avctx, data, got_frame, avpkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+2 warnings generated.
+src/libavcodec/decode.c:770:25: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+            if (!avctx->refcounted_frames) {
+                        ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+1 warning generated.
+src/libavcodec/encode.c:370:15: warning: 'avcodec_encode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_encode_video2(avctx, avctx->internal->buffer_pkt,
+              ^
+src/libavcodec/encode.c:259:25: note: 'avcodec_encode_video2' has been explicitly marked deprecated here
+int attribute_align_arg avcodec_encode_video2(AVCodecContext *avctx,
+                        ^
+src/libavcodec/encode.c:373:15: warning: 'avcodec_encode_audio2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_encode_audio2(avctx, avctx->internal->buffer_pkt,
+              ^
+src/libavcodec/encode.c:113:25: note: 'avcodec_encode_audio2' has been explicitly marked deprecated here
+int attribute_align_arg avcodec_encode_audio2(AVCodecContext *avctx,
+                        ^
+2 warnings generated.
+src/libavcodec/hevc_cabac.c:37:21: warning: variable 'num_bins_in_se' is not needed and will not be emitted [-Wunneeded-internal-declaration]
+static const int8_t num_bins_in_se[] = {
+                    ^
+1 warning generated.
+src/libavcodec/mjpegdec.c:2524:21: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+                    av_frame_set_qp_table(data, qp_table_buf, 0, FF_QSCALE_TYPE_MPEG1);
+                    ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+1 warning generated.
+src/libavcodec/mpegvideo.c:1453:12: warning: 'av_frame_set_qp_table' is deprecated [-Wdeprecated-declarations]
+    return av_frame_set_qp_table(f, ref, s->mb_stride, qp_type);
+           ^
+src/libavutil/frame.h:727:5: note: 'av_frame_set_qp_table' has been explicitly marked deprecated here
+int av_frame_set_qp_table(AVFrame *f, AVBufferRef *buf, int stride, int type);
+    ^
+1 warning generated.
+src/libavcodec/notchlc.c:285:31: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+            int u[16][16] = { 0 }, v[16][16] = { 0 };
+                              ^
+                              {}
+src/libavcodec/notchlc.c:285:50: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+            int u[16][16] = { 0 }, v[16][16] = { 0 };
+                                                 ^
+                                                 {}
+2 warnings generated.
+src/libavcodec/smvjpegdec.c:131:15: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    s->avctx->refcounted_frames = 1;
+              ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+src/libavcodec/smvjpegdec.c:162:15: warning: 'avcodec_decode_video2' is deprecated [-Wdeprecated-declarations]
+        ret = avcodec_decode_video2(s->avctx, mjpeg_data, &s->mjpeg_data_size, avpkt);
+              ^
+src/libavcodec/avcodec.h:3073:5: note: 'avcodec_decode_video2' has been explicitly marked deprecated here
+int avcodec_decode_video2(AVCodecContext *avctx, AVFrame *picture,
+    ^
+2 warnings generated.
+src/libavcodec/utils.c:1098:17: warning: 'refcounted_frames' is deprecated [-Wdeprecated-declarations]
+    if (!avctx->refcounted_frames)
+                ^
+src/libavcodec/avcodec.h:1357:9: note: 'refcounted_frames' has been explicitly marked deprecated here
+    int refcounted_frames;
+        ^
+1 warning generated.
+/Users/travis/build/kewlbear/FFmpeg-iOS-build-script/ffmpeg-4.3.1/libavcodec/x86/h264_idct.asm:1152: warning: redefining multi-line macro `STORE_DIFFx2'
+src/libavcodec/x86/h264_idct.asm:1152: warning: redefining multi-line macro `STORE_DIFFx2'
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip: input object file stripped: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/scratch/i386/libavcodec/x86/mlpdsp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip: input object file stripped: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/scratch/i386/libavcodec/x86/proresdsp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip: input object file stripped: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/scratch/i386/libavcodec/x86/simple_idct10.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavfilter/libavfilter.a(colorspacedsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavfilter/libavfilter.a(vf_atadenoise.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavfilter/libavfilter.a(vf_convolution.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavfilter/libavfilter.a(vf_gblur.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavfilter/libavfilter.a(colorspacedsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavfilter/libavfilter.a(vf_atadenoise.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavfilter/libavfilter.a(vf_convolution.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavfilter/libavfilter.a(vf_gblur.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavcodec/libavcodec.a(hevc_mc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavcodec/libavcodec.a(mlpdsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavcodec/libavcodec.a(proresdsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavcodec/libavcodec.a(simple_idct10.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavfilter.a(colorspacedsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavfilter.a(vf_atadenoise.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavfilter.a(vf_convolution.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavfilter.a(vf_gblur.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavcodec/libavcodec.a(hevc_mc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavcodec/libavcodec.a(mlpdsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavcodec/libavcodec.a(proresdsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libavcodec/libavcodec.a(simple_idct10.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavcodec.a(hevc_mc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavcodec.a(mlpdsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavcodec.a(proresdsp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavcodec.a(simple_idct10.o) has no symbols
+lipo -create /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/arm64/lib/libavcodec.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/armv7/lib/libavcodec.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavcodec.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/x86_64/lib/libavcodec.a -output FFmpeg-iOS/lib/libavcodec.a
+lipo -create /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/arm64/lib/libavdevice.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/armv7/lib/libavdevice.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavdevice.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/x86_64/lib/libavdevice.a -output FFmpeg-iOS/lib/libavdevice.a
+lipo -create /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/arm64/lib/libavfilter.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/armv7/lib/libavfilter.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavfilter.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/x86_64/lib/libavfilter.a -output FFmpeg-iOS/lib/libavfilter.a
+lipo -create /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/arm64/lib/libavformat.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/armv7/lib/libavformat.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavformat.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/x86_64/lib/libavformat.a -output FFmpeg-iOS/lib/libavformat.a
+lipo -create /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/arm64/lib/libavutil.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/armv7/lib/libavutil.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libavutil.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/x86_64/lib/libavutil.a -output FFmpeg-iOS/lib/libavutil.a
+lipo -create /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/arm64/lib/libswresample.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/armv7/lib/libswresample.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libswresample.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/x86_64/lib/libswresample.a -output FFmpeg-iOS/lib/libswresample.a
+lipo -create /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/arm64/lib/libswscale.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/armv7/lib/libswscale.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/i386/lib/libswscale.a /Users/travis/build/kewlbear/FFmpeg-iOS-build-script/thin/x86_64/lib/libswscale.a -output FFmpeg-iOS/lib/libswscale.a
